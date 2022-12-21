@@ -1,0 +1,14 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+}
+@mixin link {
+    position: absolute;
+    text-decoration: none;
+    font-size: 3rem;
+}
