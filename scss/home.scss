@@ -1,12 +1,12 @@
+@media screen and  (min-width: 600px){}
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
   box-shadow: 0 0 4px 1px rgb(163, 162, 162);
 
   .img_container {
-    width: 50%;
+    width: 10%;
 
     img {
       width: 100%;
@@ -239,3 +239,9 @@ footer{
     }
   }
 }
+//-----------mediaquery tablette-------------------
+// @media screen and  (min-width: 600px){
+//   header {
+//    border: 5px solid red;
+//   }
+// }
