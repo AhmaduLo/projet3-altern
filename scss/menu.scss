@@ -1,24 +1,9 @@
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  box-shadow: 0 0 4px 1px rgb(163, 162, 162);
-
   a {
     position: relative;
     left: -20%;
     color: black;
     cursor: pointer;
   }
-  .img_container {
-    width: 40%;
-
-    img {
-      width: 100%;
-    }
-  }
-}
 //------------partie header--------------------
 nav {
   .container_image {
@@ -89,7 +74,7 @@ nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          
+
 
           .contain {
             width: 100%;

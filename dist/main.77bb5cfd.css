@@ -14,7 +14,7 @@ header {
   box-shadow: 0 0 4px 1px rgb(163, 162, 162);
 }
 header .img_container {
-  width: 10%;
+  width: 40%;
 }
 header .img_container img {
   width: 100%;
@@ -71,7 +71,7 @@ nav .reservation_containt .info_reserv button {
   color: white;
 }
 nav .fonctionnement .container_fontionnement {
-  width: 95%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -161,9 +161,9 @@ nav .container_restau .restau_img .info_restau .nom_restau {
   margin-left: 15px;
 }
 nav .container_restau .restau_img .info_restau .nom_restau h2 {
-  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 30px;
 }
 nav .container_restau .restau_img .info_restau .nom_restau h2 a {
   color: black;
@@ -185,16 +185,16 @@ footer {
   background-color: gray;
   margin-top: 50px;
 }
+footer h2 {
+  font-family: Shrikhand;
+  color: #fff;
+  padding-top: 25px;
+}
 footer .container_footer {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
-}
-footer .container_footer h2 {
-  font-family: Shrikhand;
-  color: #fff;
-  padding-top: 25px;
 }
 footer .container_footer .footer_info {
   display: flex;
@@ -207,24 +207,67 @@ footer .container_footer .footer_info .fa {
   margin-right: 15px;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  box-shadow: 0 0 4px 1px rgb(163, 162, 162);
+@media screen and (min-width: 690px) {
+  header {
+    height: 70px;
+  }
+  header .img_container {
+    width: 30%;
+  }
+  nav .container_restau {
+    width: 70%;
+  }
+  nav .container_restau .restau_img {
+    margin-bottom: 45px;
+  }
+  nav .container_restau .restau_img .image {
+    height: 300px;
+  }
+  nav .container_restau .info_restau {
+    height: 80px;
+  }
+  nav .container_restau .info_restau h2 {
+    font-size: 30px;
+  }
+  nav .container_restau .info_restau p {
+    font-size: 20px;
+  }
+  footer {
+    padding: 25px;
+  }
+  footer h2 {
+    margin-bottom: 25px;
+  }
+  footer .container_footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-header a {
+@media screen and (min-width: 990px) {
+  header {
+    height: 75px;
+  }
+  header .img_container {
+    width: 20%;
+  }
+  .fonctionnement .container_fontionnement .navigation_link {
+    display: flex;
+  }
+  .fonctionnement .container_fontionnement .navigation_link .link {
+    width: 40%;
+  }
+  .infos_des_restau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
+  }
+}
+a {
   position: relative;
   left: -20%;
   color: black;
   cursor: pointer;
-}
-header .img_container {
-  width: 40%;
-}
-header .img_container img {
-  width: 100%;
 }
 
 nav .container_image {
@@ -354,6 +397,34 @@ nav .container_image {
 }
 nav .container_image img {
   width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  nav .container_image {
+    width: 100%;
+    height: 1014px;
+  }
+  nav .container_image img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 690px) {
+  nav .container_image {
+    width: 100%;
+    height: 463px;
+  }
+  nav .menu .container_plats {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 990px) {
+  nav .container_image {
+    width: 100%;
+    height: 763px;
+  }
+  nav .menu .container_plats {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
