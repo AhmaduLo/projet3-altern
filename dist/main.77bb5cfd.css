@@ -11,7 +11,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 4px 1px rgb(163, 162, 162);
+  padding: 15px;
+  box-shadow: 0px 2px 10px 0px rgb(163, 162, 162);
 }
 header .img_container {
   width: 40%;
@@ -23,7 +24,7 @@ header .img_container img {
 nav .localisation {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.133);
-  box-shadow: 0px 0px 2px 1px rgb(163, 162, 162);
+  box-shadow: 0px 0px 0px 0px rgb(163, 162, 162);
 }
 nav .localisation ul {
   display: flex;
@@ -71,7 +72,7 @@ nav .reservation_containt .info_reserv button {
   color: white;
 }
 nav .fonctionnement .container_fontionnement {
-  width: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,12 +159,14 @@ nav .container_restau .restau_img .info_restau {
   align-items: center;
 }
 nav .container_restau .restau_img .info_restau .nom_restau {
+  overflow: hidden;
   margin-left: 15px;
+  padding: 5px;
 }
 nav .container_restau .restau_img .info_restau .nom_restau h2 {
+  font-size: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 30px;
 }
 nav .container_restau .restau_img .info_restau .nom_restau h2 a {
   color: black;
@@ -189,6 +192,9 @@ footer h2 {
   font-family: Shrikhand;
   color: #fff;
   padding-top: 25px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer .container_footer {
   width: 90%;
@@ -207,62 +213,6 @@ footer .container_footer .footer_info .fa {
   margin-right: 15px;
 }
 
-@media screen and (min-width: 690px) {
-  header {
-    height: 70px;
-  }
-  header .img_container {
-    width: 30%;
-  }
-  nav .container_restau {
-    width: 70%;
-  }
-  nav .container_restau .restau_img {
-    margin-bottom: 45px;
-  }
-  nav .container_restau .restau_img .image {
-    height: 300px;
-  }
-  nav .container_restau .info_restau {
-    height: 80px;
-  }
-  nav .container_restau .info_restau h2 {
-    font-size: 30px;
-  }
-  nav .container_restau .info_restau p {
-    font-size: 20px;
-  }
-  footer {
-    padding: 25px;
-  }
-  footer h2 {
-    margin-bottom: 25px;
-  }
-  footer .container_footer {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 990px) {
-  header {
-    height: 75px;
-  }
-  header .img_container {
-    width: 20%;
-  }
-  .fonctionnement .container_fontionnement .navigation_link {
-    display: flex;
-  }
-  .fonctionnement .container_fontionnement .navigation_link .link {
-    width: 40%;
-  }
-  .infos_des_restau {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 55px;
-  }
-}
 a {
   position: relative;
   left: -20%;
@@ -275,6 +225,8 @@ nav .container_image {
 }
 nav .container_image img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 nav .menu {
   margin-top: -50px;
@@ -284,22 +236,25 @@ nav .menu {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
-nav .menu .container_plats {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-nav .menu .container_plats .tittle {
+nav .menu .tittle {
   padding-top: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
-nav .menu .container_plats .tittle h2 {
+nav .menu .tittle h2 {
   font-family: Shrikhand;
 }
-nav .menu .container_plats .tittle .fa {
+nav .menu .tittle .fa {
   font-size: 25px;
+}
+nav .menu .container_plats {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 nav .menu .container_plats .info_menu {
   margin-top: 30px;
@@ -358,6 +313,7 @@ nav .menu .container_plats .info_menu .plat_prix .animation {
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
+  margin-left: 15px;
 }
 nav .menu .container_plats .info_menu .plat_prix .animation .fa {
   color: #fff;
@@ -391,27 +347,12 @@ nav .btn button {
   cursor: pointer;
 }
 
-nav .container_image {
-  width: 100%;
-  height: 350px;
-}
-nav .container_image img {
-  width: 100%;
-}
-
-@media screen and (min-width: 990px) {
-  nav .container_image {
-    width: 100%;
-    height: 1014px;
-  }
-  nav .container_image img {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 690px) {
   nav .container_image {
     width: 100%;
-    height: 463px;
+  }
+  nav .menu .tittle {
+    width: 70%;
   }
   nav .menu .container_plats {
     width: 70%;
@@ -420,10 +361,87 @@ nav .container_image img {
 @media screen and (min-width: 990px) {
   nav .container_image {
     width: 100%;
-    height: 763px;
+  }
+  nav .container_image img {
+    height: 100vh;
+  }
+  nav .menu .tittle {
+    width: 90%;
   }
   nav .menu .container_plats {
     width: 60%;
+  }
+  nav .menu .container_plats {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  nav .menu .container_plats .info_menu {
+    width: 30%;
+  }
+  nav .menu .container_plats .info_menu .plat_prix {
+    height: 80px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 690px) {
+  header {
+    height: 70px;
+  }
+  header .img_container {
+    width: 30%;
+  }
+  .fonctionnement .container_fontionnement {
+    width: 70%;
+  }
+  nav .container_restau {
+    width: 90%;
+  }
+  nav .container_restau .restau_img {
+    margin-bottom: 45px;
+  }
+  nav .container_restau .restau_img .image {
+    height: 300px;
+  }
+  nav .container_restau .info_restau {
+    height: 80px;
+  }
+  nav .container_restau .info_restau h2 {
+    font-size: 30px;
+  }
+  nav .container_restau .info_restau p {
+    font-size: 20px;
+  }
+  footer {
+    padding: 25px;
+  }
+  footer h2 {
+    margin-bottom: 25px;
+  }
+  footer .container_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 990px) {
+  header {
+    height: 75px;
+  }
+  header .img_container {
+    width: 20%;
+  }
+  .fonctionnement .container_fontionnement .navigation_link {
+    display: flex;
+  }
+  .fonctionnement .container_fontionnement .navigation_link .link {
+    width: 40%;
+  }
+  .infos_des_restau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
   }
 }
 

@@ -3,25 +3,54 @@
     nav {
       .container_image {
         width: 100%;
-        height: 463px;
+       
       }
 
-      .menu .container_plats{
+      .menu{
+      .tittle{
+        width: 70%;
+      }
+       .container_plats{
         width: 70%;
       }
     }
-    
+  }
   }
 //-----------mediaquery ordi-------------------
   @media screen and (min-width: 990px){
     nav {
         .container_image {
           width: 100%;
-          height: 763px;
+          
+          img{
+            height: 100vh;
+          }
         }
 
-        .menu .container_plats{
+        .menu{
+        .tittle{
+          width: 90%;
+        }
+         .container_plats{
             width: 60%;
+           
           }
+        }
+     .menu 
+     .container_plats{
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .info_menu{
+        width: 30%;
+
+        .plat_prix{
+          height: 80px;
+          margin-bottom: 40px;
+        }
+      }
+     }     
     }
   }
