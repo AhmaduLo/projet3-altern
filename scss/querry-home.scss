@@ -1,83 +1,100 @@
 //-----------mediaquery tablette-------------------
 @media screen and (min-width: 690px) {
-    header {
-      height: 70px;
-  
-  
-      .img_container {
-        width: 30%;
-      }
+  header {
+    height: 70px;
+
+
+    .img_container {
+      width: 30%;
     }
-//--------------------------------------
-    .fonctionnement {
-        .container_fontionnement {
-          width: 70%;
-        }
+  }
+
+  //--------------------------------------
+  section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fonctionnement {
+    .container_fontionnement {
+      width: 70%;
     }
+  }
+
   //--------------------------------------  
-    nav .container_restau {
-      width: 90%;
-  
-      .restau_img {
-        margin-bottom: 45px;
-  
-        .image {
-          height: 300px;
-        }
-      }
-      .info_restau {
-        height: 80px;
-  
-        h2 {
-          font-size: 30px;
-        }
-  
-        p {
-          font-size: 20px;
-        }
+  nav .container_restau {
+    width: 90%;
+
+    .restau_img {
+      margin-bottom: 45px;
+
+      .image {
+        height: 300px;
       }
     }
-  
-    footer {
-      padding: 25px;
-  
+
+    .info_restau {
+      height: 80px;
+
       h2 {
-        margin-bottom: 25px;
+        font-size: 30px;
       }
-      .container_footer {
-        display: flex;
-        justify-content: space-between;
+
+      p {
+        font-size: 20px;
       }
     }
   }
-  //-----------mediaquery ordi-------------------
-  @media screen and (min-width: 990px) {
-    header {
-      height: 75px;
-  
-  
-      .img_container {
-        width: 20%;
-      }
+
+  footer {
+    padding: 25px;
+
+    h2 {
+      margin-bottom: 25px;
     }
-    //--------------------------------------------
-    .fonctionnement {
-      .container_fontionnement {
-        .navigation_link {
-          display: flex;
-  
-          .link {
-            width: 40%;
-          }
+
+    .container_footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+//-----------mediaquery ordi-------------------
+@media screen and (min-width: 990px) {
+  header {
+    height: 75px;
+
+
+    .img_container {
+      width: 20%;
+    }
+  }
+
+  //--------------------------------------------
+  section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fonctionnement {
+    .container_fontionnement {
+      .navigation_link {
+        display: flex;
+
+        .link {
+          width: 40%;
         }
       }
     }
-  //-------------------------------------
-    .infos_des_restau {
-      width: 100%;
-      display: grid;
-      grid-template-columns: (1fr 1fr);
-      column-gap: 55px;
-    }
   }
-  
+
+  //-------------------------------------
+  .infos_des_restau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    column-gap: 55px;
+  }
+}

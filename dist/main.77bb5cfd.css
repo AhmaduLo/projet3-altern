@@ -405,6 +405,11 @@ nav .btn button {
   header .img_container {
     width: 30%;
   }
+  section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .fonctionnement .container_fontionnement {
     width: 70%;
   }
@@ -443,6 +448,11 @@ nav .btn button {
   }
   header .img_container {
     width: 20%;
+  }
+  section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .fonctionnement .container_fontionnement .navigation_link {
     display: flex;
