@@ -18,7 +18,7 @@ nav {
 
   .menu {
     margin-top: -50px;
-    background-color: $white;
+    background-color: rgba(236, 236, 236, 0.969);
     position: relative;
     z-index: 1;
     border-top-left-radius: 40px;
@@ -38,6 +38,7 @@ nav {
       }
       .fa {
         font-size: 25px;
+        //background-color: white;
       }
     }
     .container_plats {
@@ -70,7 +71,7 @@ nav {
         }
 
         .plat_prix {
-          box-shadow: 0px 0px 2px 1px rgb(163, 162, 162);
+          box-shadow: 0px 0px 10px 0px rgb(163, 162, 162);
           height: 60px;
           border-radius: 10px;
           padding-left: 10px;

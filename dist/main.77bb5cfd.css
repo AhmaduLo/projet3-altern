@@ -10,7 +10,7 @@
 .loading {
   position: absolute;
   z-index: 1;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.932);
   width: 100%;
   height: 300vh;
   display: flex;
@@ -29,15 +29,15 @@
 }
 @keyframes flash {
   0% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900;
+    color: #9356DC;
+    text-shadow: 0 0 7px gray;
   }
   90% {
     color: #484848;
     text-shadow: none;
   }
   100% {
-    color: #fff900;
+    color: #9356DC;
     text-shadow: 0 0 7px #fff900;
   }
 }
@@ -260,18 +260,17 @@ nav .container_restau .restau_img .info_restau .nom_restau h2 a {
 nav .container_restau .restau_img .info_restau .nom_restau p {
   margin-bottom: 15px;
 }
-nav .container_restau .restau_img .info_restau .fa {
+nav .container_restau .restau_img .info_restau .fa-heart {
   margin-right: 15px;
   font-size: 25px;
   cursor: pointer;
 }
-nav .container_restau .restau_img .info_restau .fa:hover {
+nav .container_restau .restau_img .info_restau .fa-heart:hover {
   color: #9356DC;
 }
 
 footer {
   background-color: gray;
-  margin-top: 50px;
 }
 footer h2 {
   font-family: Shrikhand;
@@ -315,7 +314,7 @@ nav .container_image img {
 }
 nav .menu {
   margin-top: -50px;
-  background-color: #fff;
+  background-color: rgba(236, 236, 236, 0.969);
   position: relative;
   z-index: 1;
   border-top-left-radius: 40px;
@@ -363,7 +362,7 @@ nav .menu .container_plats .info_menu h3::after {
   margin-bottom: 15px;
 }
 nav .menu .container_plats .info_menu .plat_prix {
-  box-shadow: 0px 0px 2px 1px rgb(163, 162, 162);
+  box-shadow: 0px 0px 10px 0px rgb(163, 162, 162);
   height: 60px;
   border-radius: 10px;
   padding-left: 10px;
