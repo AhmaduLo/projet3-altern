@@ -72,15 +72,16 @@ nav {
 
         .plat_prix {
           box-shadow: 0px 0px 10px 0px rgb(163, 162, 162);
-          height: 60px;
+          height: 70px;
           border-radius: 10px;
           padding-left: 10px;
           padding-right: 10px;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
           cursor: pointer;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          
 
 
           .contain {
@@ -88,13 +89,17 @@ nav {
           }
 
           h2 {
-            font-size: 20px;
+            font-size: 17px;
             margin-bottom: 5px;
           }
           .prix_name {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 15px;
+            margin-bottom: 0px;
+
+            p{
+              font-size: 13px;
+            }
           }
           .animation {
             width: 0%;

@@ -1,56 +1,61 @@
 //-----------mediaquery tablette-------------------
-@media screen and (min-width: 690px){
-    nav {
-      .container_image {
-        width: 100%;
-       
-      }
+@media screen and (min-width: 690px) {
+  nav {
+    .container_image {
+      width: 100%;
+    }
 
-      .menu{
-      .tittle{
+    .menu {
+      .tittle {
         width: 70%;
       }
-       .container_plats{
+      .container_plats {
         width: 70%;
+
+        .plat_prix .contain h2{
+          font-size: 17px;
+        }
+
+        .plat_prix .contain .prix_name p{
+          font-size: 17px;
+        }
       }
     }
   }
-  }
+}
 //-----------mediaquery ordi-------------------
-  @media screen and (min-width: 990px){
-    nav {
-        .container_image {
-          width: 100%;
-          
-          img{
-            height: 100vh;
-          }
-        }
+@media screen and (min-width: 990px) {
+  nav {
+    .container_image {
+      width: 100%;
 
-        .menu{
-        .tittle{
-          width: 90%;
-        }
-         .container_plats{
-            width: 60%;
-           
-          }
-        }
-     .menu 
-     .container_plats{
+      img {
+        height: 100vh;
+      }
+    }
+
+    .menu {
+      .tittle {
+        width: 90%;
+      }
+      .container_plats {
+        width: 60%;
+      }
+    }
+    .menu .container_plats {
       width: 90%;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
 
-      .info_menu{
+      .info_menu {
         width: 30%;
 
-        .plat_prix{
+        .plat_prix {
           height: 80px;
           margin-bottom: 40px;
         }
       }
-     }     
     }
   }
+}
