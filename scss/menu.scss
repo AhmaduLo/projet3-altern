@@ -1,9 +1,9 @@
-  a {
-    position: relative;
-    left: -20%;
-    color: black;
-    cursor: pointer;
-  }
+a {
+  position: relative;
+  left: -20%;
+  color: black;
+  cursor: pointer;
+}
 //------------partie header--------------------
 nav {
   .container_image {
@@ -39,6 +39,10 @@ nav {
       .fa {
         font-size: 25px;
         //background-color: white;
+        &:hover{
+          background-color: $Tertiaire;
+          cursor: pointer;
+        }
       }
     }
     .container_plats {
@@ -46,20 +50,19 @@ nav {
       margin-left: auto;
       margin-right: auto;
 
-      
       .info_menu {
         margin-top: 30px;
         margin-bottom: 30px;
         opacity: 0;
-          transform: translatey(30px);
-          animation: apparition 0.5s 0.9s ease-out forwards;
+        transform: translatey(30px);
+        animation: apparition 0.5s 0.9s ease-out forwards;
 
-          @keyframes apparition {
-            100% {
-              opacity: 1;
-              transform: none;
-            }
+        @keyframes apparition {
+          100% {
+            opacity: 1;
+            transform: none;
           }
+        }
 
         h3::after {
           content: "";
@@ -72,7 +75,7 @@ nav {
 
         .plat_prix {
           box-shadow: 0px 0px 10px 0px rgb(163, 162, 162);
-          height: 70px;
+          height: 55px;
           border-radius: 10px;
           padding-left: 10px;
           padding-right: 10px;
@@ -81,55 +84,70 @@ nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          
-
+          overflow: hidden;
 
           .contain {
-            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           h2 {
             font-size: 17px;
-            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           .prix_name {
             display: flex;
             justify-content: space-between;
             margin-bottom: 0px;
 
-            p{
-              font-size: 13px;
+            p:nth-child(1) {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
           }
-          .animation {
-            width: 0%;
+          .cont-anim {
             height: 100%;
-            background-color: $Tertiaire;
-            margin-right: -10px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            overflow: hidden;
             display: flex;
-            align-items: center;
             justify-content: center;
-            transition: 0.5s ease-in-out;
-            margin-left: 15px;
+            align-items: center;
+            margin-right: -71px;
 
-            .fa {
-              color: $white;
-              font-size: 25px;
-              transform: rotate(180deg);
+            .prix{
+              margin-bottom: -20px;
+            }
+
+            .animat {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $Tertiaire;
+              width: 60px;
+              margin-left: 15px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
               transition: 0.5s ease-in-out;
+
+              .fa {
+                color: $white;
+                font-size: 25px;
+                transform: rotate(180deg);
+                transition: 0.5s ease-in-out;
+              }
             }
           }
         }
-        .plat_prix:hover .animation {
-          width: 20%;
+        .plat_prix:hover .animat {
+          margin-right: 60px;
           transition: 0.5s ease-in-out;
         }
-        .plat_prix:hover .animation .fa {
+        .plat_prix:hover .animat .fa {
           transform: rotate(0deg);
-          transition: 0.5s ease-in-out;
+          transition: 0.8s ease-in-out;
         }
       }
     }
