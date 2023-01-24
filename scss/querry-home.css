@@ -1,0 +1,70 @@
+@media screen and (min-width: 690px) {
+  header {
+    height: 70px;
+  }
+  header .img_container {
+    width: 30%;
+  }
+  section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fonctionnement .container_fontionnement {
+    width: 70%;
+  }
+  nav .container_restau {
+    width: 90%;
+  }
+  nav .container_restau .restau_img {
+    margin-bottom: 45px;
+  }
+  nav .container_restau .restau_img .image {
+    height: 300px;
+  }
+  nav .container_restau .info_restau {
+    height: 80px;
+  }
+  nav .container_restau .info_restau h2 {
+    font-size: 30px;
+  }
+  nav .container_restau .info_restau p {
+    font-size: 20px;
+  }
+  footer {
+    padding: 25px;
+  }
+  footer h2 {
+    margin-bottom: 25px;
+  }
+  footer .container_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 990px) {
+  header {
+    height: 75px;
+  }
+  header .img_container {
+    width: 20%;
+  }
+  section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fonctionnement .container_fontionnement .navigation_link {
+    display: flex;
+  }
+  .fonctionnement .container_fontionnement .navigation_link .link {
+    width: 40%;
+  }
+  .infos_des_restau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 55px;
+         column-gap: 55px;
+  }
+}/*# sourceMappingURL=querry-home.css.map */

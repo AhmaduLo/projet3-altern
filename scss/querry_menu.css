@@ -1,0 +1,44 @@
+@media screen and (min-width: 690px) {
+  nav .container_image {
+    width: 100%;
+  }
+  nav .menu .tittle {
+    width: 70%;
+  }
+  nav .menu .container_plats {
+    width: 70%;
+  }
+  nav .menu .container_plats .plat_prix .contain h2 {
+    font-size: 17px;
+  }
+  nav .menu .container_plats .plat_prix .contain .prix_name p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 990px) {
+  nav .container_image {
+    width: 100%;
+  }
+  nav .container_image img {
+    height: 100vh;
+  }
+  nav .menu .tittle {
+    width: 90%;
+  }
+  nav .menu .container_plats {
+    width: 60%;
+  }
+  nav .menu .container_plats {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  nav .menu .container_plats .info_menu {
+    width: 30%;
+  }
+  nav .menu .container_plats .info_menu .plat_prix {
+    height: 80px;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=querry_menu.css.map */
